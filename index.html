@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saho Tech</title>
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+    <!--BOOSTRAP CSS FILE -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header" class="container-fluid  d-flex align-items-center fixed-top ">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="" class="brand">
+                <img src="img/logo.png" style=" width: 50px;height: 50px;">
+                <span class="">SahoTech</span>
+            </a>
+            <div class="d-flex align-items-center">
+                <nav class="navmenu pt-3 d-md-block" id="sideMenu">
+                    <ul>
+                        <li class=""><a href="#hero" onclick="closeMenu()" class="active">home</a></li>
+                        <li><a href="#about-us" onclick="closeMenu()">about</a></li>
+                        <li><a href="#services" onclick="closeMenu()">services</a></li>
+                        <li><a href="#projects" onclick="closeMenu()">projects</a></li>
+                        <!-- <li><a href="#resume" onclick="closeMenu()">resume</a></li> -->
+                        <li><a href="#contact" onclick="closeMenu()">contact</a></li>
+
+                        <i class="bi bi-x close-menu d-lg-none" onclick="closeMenu()"></i>
+                    </ul>
+                </nav>
+                <a href="#about-us" class="get-started">get-started</a>
+
+                <i class="bi bi-list d-lg-none" onclick="openMenu()"></i>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="hero" class="hero">
+
+            <div class="container text-white">
+                <div class="row gy-4">
+                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                        <h1>Better Solutions For Your Business</h1>
+                        <p>We are team of talented designers, developers making Mobile, Web Apps and Website with React,
+                            Flutter, HTML CSS,
+                            JavaScript and many more</p>
+                        <div class="d-flex">
+                            <a href="#about-us" class="get-started about">get-started</a>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                        <img src="img/hero-img.png" class="img-fluid animated" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="container d-flex align-items-center justify-content-between">
+
+                </div>
+            </div>
+        </section><!-- /Hero Section -->
+
+        <section id="about-us" class="about-us section ">
+            <div class="container section-title">
+                <h2>About Us</h2>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <p>
+                            We leverage cutting-edge tools and technologies to deliver exceptional results for your
+                            business.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-circle"></i> <span>Uninterrupted Assistance Whenever You Need
+                                    It</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>Instant Communication for Immediate
+                                    Solutions</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>Real-Time Information for Better Decision
+                                    Making</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>SahoTech is a passionate team of skilled web and mobile app developers based in Ghana, West
+                            Africa. With a deep
+                            proficiency in technologies like Flutter, HTML, CSS, and JavaScript, we excel in creating
+                            dynamic websites and mobile
+                            applications tailored to meet client needs. Our specialization in UI/UX ensures
+                            user-friendly and visually compelling
+                            experiences, while our commitment to continuous learning keeps us at the forefront of design
+                            and development. Whether
+                            you need a simple website or a complex mobile application, we are here to bring your vision
+                            to life.
+                        </p>
+                        <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right mx-3"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <section id="why-us" class="section why-us light-background my-5">
+                <div class="container-fluid">
+
+                    <div class="row gy-4">
+
+                        <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+                            <div class="content px-xl-5" data-aos="slide-in-up" data-aos-delay="100">
+                                <div class="section-title container">
+                                    <h2>Why Us</h2>
+                                    <p>
+                                        Choosing SahoTech means partnering with a team that is dedicated to your
+                                        success. We combine technical expertise with a
+                                        passion for design and development, ensuring that every project we undertake is
+                                        completed with attention to detail and a
+                                        focus on delivering outstanding results. Our team’s versatility, from mobile app
+                                        development to creating seamless web
+                                        solutions, makes us the ideal partner for businesses of all sizes. Let us help
+                                        you transform your vision into reality
+                                        with innovative, tailored digital solutions.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="faq-container px-xl-5">
+                                <div class="faq-item">
+                                    <h3><span>01</span> What services does SahoTech offer?</h3>
+                                    <div class="faq-content" id="faqContent">
+                                        <p>SahoTech specializes in mobile app development, web development, UI/UX
+                                            design, and product management using modern tools
+                                            like React, Flutter, and JavaScript.
+
+                                        </p>
+                                    </div>
+                                    <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                                </div><!-- End Faq item-->
+                                <div class="faq-item">
+                                    <h3><span>02</span> What technologies do you work with?</h3>
+                                    <div class="faq-content" id="faqContent">
+                                        <p>We work with HTML, CSS, JavaScript, Flutter, C++, Python, and more to develop
+                                            highly functional and aesthetically
+                                            pleasing digital solutions.
+                                        </p>
+                                    </div>
+                                    <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                                </div><!-- End Faq item-->
+                                <div class="faq-item">
+                                    <h3><span>03</span> Do you offer both iOS and Android app development?</h3>
+                                    <div class="faq-content" id="faqContent">
+                                        <p>Yes, we provide iOS and Android app development services to meet all your
+                                            mobile app needs.
+                                        </p>
+                                    </div>
+                                    <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                                </div><!-- End Faq item-->
+                                <div class="faq-item">
+                                    <h3><span>04</span> What is the typical project timeline for mobile app development?
+                                    </h3>
+                                    <div class="faq-content" id="faqContent">
+                                        <p>The timeline varies depending on the complexity and features of the app. A
+                                            standard mobile app project typically takes
+                                            between 4 to 12 weeks, including planning, design, development, and testing
+                                            phases.
+                                        </p>
+                                    </div>
+                                    <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                                </div><!-- End Faq item-->
+                            </div>
+                        </div>
+                        <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+                            <img src="img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </section><!-- /About us Section -->
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <img src="img/skills.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 content">
+                        <div class="section-title container">
+                            <h3>Skills</h3>
+                            <p class="fst-italic">
+                                At SahoTech, our team brings a diverse set of skills that enable us to tackle a wide
+                                range
+                                of projects with precision
+                                and creativity. We are constantly honing our craft to stay at the forefront of
+                                technological
+                                advancements. Our key
+                                skills include:
+                            </p>
+                        </div>
+
+                        <div class="skills-content skills-animation">
+                            <div class="progress">
+                                <span class="skill"><span>HTML</span> <i class="val">90%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar html"></div>
+                                </div>
+                            </div><!-- End Skills Item -->
+                            <div class="progress">
+                                <span class="skill"><span>CSS</span> <i class="val">70%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar css"></div>
+                                </div>
+                            </div><!-- End Skills Item -->
+                            <div class="progress">
+                                <span class="skill"><span>JavaScript</span> <i class="val">65%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar js"></div>
+                                </div>
+                            </div><!-- End Skills Item -->
+                            <div class="progress">
+                                <span class="skill"><span>Python</span> <i class="val">50%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar python"></div>
+                                </div>
+                            </div><!-- End Skills Item -->
+                            <div class="progress">
+                                <span class="skill"><span>Flutter</span> <i class="val">95%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar flutter"></div>
+                                </div>
+                            </div><!-- End Skills Item -->
+                            <div class="progress">
+                                <span class="skill"><span>C++</span> <i class="val">74%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar c"></div>
+                                </div>
+                            </div><!-- End Skills Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /skills Section -->
+
+        <!-- Services Section -->
+        <section id="services" class="services section my-5">
+            <div class="container-fluid light-background py-5">
+                <div class="container section-title">
+                    <h2>Services</h2>
+                    <p>At SahoTech, we are a team of highly skilled and passionate developers and designers from West
+                        Africa Ghana, specializing in
+                        creating digital solutions that enhance business operations</p>
+                </div>
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-xl-3 col-md-6 d-flex ">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="service-item position-relative">
+                                        <div class="icon"><i class="bi bi-apple icon"></i></div>
+                                        <h4><a href="" class="stretched-link">IOS Development</a></h4>
+                                        <p>Building sleek and functional apps for iOS devices, ensuring compatibility
+                                            with the latest Apple technologies.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End of card  -->
+                        <div class="col-xl-3 col-md-6 d-flex">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="service-item position-relative">
+                                        <div class="icon"><i class="bi bi-android2 icon"></i></div>
+                                        <h4><a href="" class="stretched-link">Android Development</a></h4>
+                                        <p>Developing robust Android applications that provide a seamless user
+                                            experience across various devices.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End of card  -->
+                        <div class="col-xl-3 col-md-6 d-flex">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="service-item position-relative">
+                                        <div class="icon"><i class="bi bi-code-square icon"></i></div>
+                                        <h4><a href="" class="stretched-link">Web Development</a></h4>
+                                        <p>Crafting responsive and dynamic websites that reflect your brand and engage
+                                            your audience.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End of card  -->
+                        <div class="col-xl-3 col-md-6 d-flex">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="service-item position-relative">
+                                        <div class="icon"><i class="bi bi-crop icon"></i></div>
+                                        <h4><a href="" class="stretched-link">UI/UX Design</a></h4>
+                                        <p>Designing intuitive interfaces and engaging user experiences that prioritize
+                                            usability and aesthetics.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End of card  -->
+                    </div>
+
+        </section>
+
+        <!-- Call To Action Section -->
+        <section id="call-to-action" class="call-to-action section dark-background my-5">
+
+            <img src="img/cta-bg.jpg" alt="">
+
+            <div class="container">
+
+                <div class="row" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-xl-9 text-center text-xl-start">
+                        <h3>Call To Action</h3>
+                        <p>We are interested in connecting with you and would love to hear more about your thoughts and
+                            ideas. Please feel free to
+                            reach out to us
+                            at your convenience.</p>
+                    </div>
+                    <div class="col-xl-3 cta-btn-container text-center">
+                        <a class="cta-btn align-middle text-decoration-none" href="#">Call To Action</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section><!-- /Call To Action Section -->
+
+        <!-- ===== Projects Section =====  -->
+        <section id="projects" class="projects section">
+            <div class="container section-title">
+                <h2>Projects</h2>
+                <p>At SahoTech, we pride ourselves on delivering innovative and impactful digital solutions across
+                    various industries.
+                    Below are some of our standout projects:</p>
+            </div>
+            <div class="container">
+                <div class="row gy-4 mb-5">
+                    <div class="col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img src="img/portfolio/app-1.jpg" alt="" srcset="">
+                                <div class="layer">
+                                    <h3 class="text-white">Project Name</h3>
+                                    <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                                        ad
+                                        laborum, neque
+                                        debitis earum unde a ea laudantium qui itaque minima tempora praesentium magni
+                                        harum
+                                        soluta quod eos consequuntur officia consectetur. Consequatur laboriosam eaque
+                                        facilis veritatis dolorem, aliquid ea hic quidem facere dolor, dolore in
+                                        officiis
+                                        architecto, doloremque repellat consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--End of project card --->
+                    <div class="col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img src="img/portfolio/app-1.jpg" alt="" srcset="">
+                                <div class="layer">
+                                    <h3 class="text-white">Project Name</h3>
+                                    <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                                        ad
+                                        laborum, neque
+                                        debitis earum unde a ea laudantium qui itaque minima tempora praesentium magni
+                                        harum
+                                        soluta quod eos consequuntur officia consectetur. Consequatur laboriosam eaque
+                                        facilis veritatis dolorem, aliquid ea hic quidem facere dolor, dolore in
+                                        officiis
+                                        architecto, doloremque repellat consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--End of project card --->
+                    <div class="col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img src="img/portfolio/app-1.jpg" alt="" srcset="">
+                                <div class="layer">
+                                    <h3 class="text-white">Project Name</h3>
+                                    <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                                        ad
+                                        laborum, neque
+                                        debitis earum unde a ea laudantium qui itaque minima tempora praesentium magni
+                                        harum
+                                        soluta quod eos consequuntur officia consectetur. Consequatur laboriosam eaque
+                                        facilis veritatis dolorem, aliquid ea hic quidem facere dolor, dolore in
+                                        officiis
+                                        architecto, doloremque repellat consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--End of project card --->
+                    <div class="col-xl-3">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img src="img/portfolio/app-1.jpg" alt="" srcset="">
+                                <div class="layer">
+                                    <h3 class="text-white">Project Name</h3>
+                                    <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                                        ad
+                                        laborum, neque
+                                        debitis earum unde a ea laudantium qui itaque minima tempora praesentium magni
+                                        harum
+                                        soluta quod eos consequuntur officia consectetur. Consequatur laboriosam eaque
+                                        facilis veritatis dolorem, aliquid ea hic quidem facere dolor, dolore in
+                                        officiis
+                                        architecto, doloremque repellat consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--End of project card --->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section">
+            <div class="container section-title">
+                <h2>Testimonials</h2>
+                <p>Don’t just take our word for it – hear what our clients have to say:</p>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-xl-6">
+                        <img src="img/testimonials/test.jpeg" alt="test" style="width: 70%;">
+                    </div>
+                    <div class="col-xl-6">
+
+
+                        <div class="test-cards">
+                            <div class="card test-card">
+                                <div class="card-body">
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        <span class="">Working with SahoTech was a game-changer for our business.
+                                            Their
+                                            ability to
+                                            understand our needs and turn them into a
+                                            functional, beautiful app was impressive. Their expertise in Flutter and
+                                            web
+                                            development
+                                            is top-notch.</span>
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                    <h6 class="text-center">— Kwame Nkrumah, <span class="fs-6 text-muted">CEO of
+                                            Tech
+                                            Innovations
+                                            Ltd</span>
+                                    </h6>
+                                </div>
+                            </div> <!-- end of test card -->
+                            <div class="card test-card">
+                                <div class="card-body">
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        <span class="">The level of professionalism and attention to detail SahoTech
+                                            brought to our project was incredible. They delivered our
+                                            website on time and exceeded our expectations in terms of design and
+                                            functionality.</span>
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                    <h6 class="text-center">— Sarah Owusu, <span class="fs-6 text-muted">Marketing
+                                            Director at Owusu Holdings.</span>
+                                    </h6>
+                                </div>
+                            </div> <!-- end of test card -->
+                            <div class="card test-card">
+                                <div class="card-body">
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        <span class="">SahoTech’s team delivered a seamless and responsive app for
+                                            both iOS and Android. The communication throughout the
+                                            project was excellent, and they handled every aspect of the development
+                                            with care.</span>
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                    <h6 class="text-center">— Emmanuel Boakye, <span class="fs-6 text-muted">Founder
+                                            of GreenLife Solutions</span>
+                                    </h6>
+                                </div>
+                            </div> <!-- end of test card -->
+                            <div class="card test-card">
+                                <div class="card-body">
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        <span class="">From concept to completion, SahoTech handled our mobile app
+                                            project professionally. Their technical expertise and
+                                            commitment to delivering quality work were evident in every step of the
+                                            process.</span>
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                    <h6 class="text-center">— David Anane, <span class="fs-6 text-muted">CTO at
+                                            FutureNet
+                                        </span>
+                                    </h6>
+                                </div>
+                            </div> <!-- end of test card -->
+                            <div class="card test-card">
+                                <div class="card-body">
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        <span class="">I was blown away by SahoTech’s creativity and technical
+                                            skills. Their design work for our company's UI/UX has
+                                            significantly improved user engagement. Highly recommend them for any
+                                            digital project.</span>
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                    <h6 class="text-center">— Yaa Asantewaa, <span class="fs-6 text-muted">Product
+                                            Manager at EasyShop
+                                        </span>
+                                    </h6>
+                                </div>
+                            </div> <!-- end of test card -->
+
+                            <div class="card test-card">
+                                <div class="card-body">
+                                    <p>
+                                        <i class="bi bi-quote quote-icon-left"></i>
+                                        <span class="">I've had the preasure of collaborating with SahoTech on
+                                            several projects, and each time, his coding expertice and problem
+                                            solving abilities shine through. If you need a developer who can get the
+                                            job done, is the one!</span>
+                                        <i class="bi bi-quote quote-icon-right"></i>
+                                    </p>
+                                    <h6 class="text-center">— John Kumi, <span class="fs-6 text-muted">Founder
+                                        </span>
+                                    </h6>
+                                </div>
+                            </div> <!-- end of test card -->
+                        </div>
+
+
+                        <div class="d-flex align-items-center justify-content-center pt-3">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+        </section><!--End of Testimonials-->
+
+        <!-- Frequently Ask Questions Section -->
+        <section id="frequently" class="frequently section mt-5">
+            <div class="light-background py-5">
+                <div class="container section-title">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>We understand that you may have questions about how we work and what we offer. Here are some of
+                        the most common inquiries</p>
+                </div>
+                <div class="container">
+                    <div class="faq-container px-xl-5">
+                        <div class="faq-item">
+                            <h3><span>01</span> What services does SahoTech offer?</h3>
+                            <div class="faq-content" id="faqContent">
+                                <p>SahoTech specializes in mobile app development, web development, UI/UX
+                                    design, and product management using modern tools
+                                    like React, Flutter, and JavaScript.
+
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                        </div><!-- End Faq item-->
+                        <div class="faq-item">
+                            <h3><span>02</span> What technologies do you work with?</h3>
+                            <div class="faq-content" id="faqContent">
+                                <p>We work with HTML, CSS, JavaScript, Flutter, C++, Python, and more to develop
+                                    highly functional and aesthetically
+                                    pleasing digital solutions.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                        </div><!-- End Faq item-->
+                        <div class="faq-item">
+                            <h3><span>03</span> Do you offer both iOS and Android app development?</h3>
+                            <div class="faq-content" id="faqContent">
+                                <p>Yes, we provide iOS and Android app development services to meet all your
+                                    mobile app needs.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                        </div><!-- End Faq item-->
+                        <div class="faq-item">
+                            <h3><span>04</span> What is the typical project timeline for mobile app development?
+                            </h3>
+                            <div class="faq-content" id="faqContent">
+                                <p>The timeline varies depending on the complexity and features of the app. A
+                                    standard mobile app project typically takes
+                                    between 4 to 12 weeks, including planning, design, development, and testing
+                                    phases.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                        </div><!-- End Faq item-->
+                        <div class="faq-item">
+                            <h3><span>05</span> Do you offer post-launch support and maintenance?</h3>
+                            <div class="faq-content" id="faqContent">
+                                <p>Yes, we provide ongoing support and maintenance services to ensure your app or
+                                    website continues to function smoothly
+                                    and remains updated with the latest features and security protocols.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                        </div><!-- End Faq item-->
+                        <div class="faq-item">
+                            <h3><span>06</span> Can you help with redesigning an existing website or app?</h3>
+                            <div class="faq-content" id="faqContent">
+                                <p>Absolutely! Whether you want to enhance your website’s UI/UX or update your app’s
+                                    features, we can revamp your existing
+                                    digital product to meet modern standards.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                        </div><!-- End Faq item-->
+                        <div class="faq-item">
+                            <h3><span>07</span> How do you ensure the security of the apps and websites you develop?
+                            </h3>
+                            <div class="faq-content" id="faqContent">
+                                <p>We follow industry best practices for security, including encryption, secure
+                                    authentication, and regular security
+                                    audits. We prioritize the protection of user data and ensure that all our products
+                                    comply with privacy standards.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                        </div><!-- End Faq item-->
+                        <div class="faq-item">
+                            <h3><span>07</span> How do you ensure the security of the apps and websites you develop?
+                            </h3>
+                            <div class="faq-content" id="faqContent">
+                                <p>We follow industry best practices for security, including encryption, secure
+                                    authentication, and regular security
+                                    audits. We prioritize the protection of user data and ensure that all our products
+                                    comply with privacy standards.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                        </div><!-- End Faq item-->
+                        <div class="faq-item">
+                            <h3><span>08</span> What’s your process for starting a new project?
+                            </h3>
+                            <div class="faq-content" id="faqContent">
+                                <p>Our process begins with understanding your goals and needs. We move forward with
+                                    wireframing, prototyping, design,
+                                    development, and finally, testing and launch. Throughout the process, we maintain
+                                    close communication to ensure your
+                                    vision is realized.
+                                </p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right" id="faq-toggle"></i>
+                        </div><!-- End Faq item-->
+                    </div>
+                </div>
+            </div>
+
+        </section><!--End of Frequently Ask Questions Section -->
+
+
+        <section id="contact" class="contact section">
+            <div class="container section-title">
+                <h2>Contact</h2>
+                <p>We are interested in connecting with you and would love to hear more about your thoughts and ideas.
+                    Please feel free to
+                    reach out to us
+                    at your convenience.</p>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-xl-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="info-item d-flex">
+                                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                    <div>
+                                        <h3>Address</h3>
+                                        <p>Adjoa Road, Takoradi, WH- 2108-5059</p>
+                                    </div>
+                                </div>
+                                <div class="info-item d-flex">
+                                    <i class="bi bi-telephone flex-shrink-0"></i>
+                                    <div>
+                                        <h3>Call Us</h3>
+                                        <p>+233 242780205 | +233 256787512</p>
+                                    </div>
+                                </div>
+                                <div class="info-item d-flex">
+                                    <i class="bi bi-envelope flex-shrink-0"></i>
+                                    <div>
+                                        <h3>Email Us</h3>
+                                        <p><a href="https://mail.google.com/mail/">sahotech06@gmail.com</a></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63602.38987898831!2d-1.8187105272002988!3d4.9146633856217115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfe7799a7b4d8bd9%3A0xd5df62ba6ac74520!2sTakoradi!5e0!3m2!1sen!2sgh!4v1726101847942!5m2!1sen!2sgh"
+                                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <div class="card form-el">
+                            <div class="card-body py-4">
+                                <form class="form" id="contact-form" method="dialog">
+                                    <div class="row gy-4">
+                                        <div class="col-md-6">
+                                            <lable class="form-label">Your Name</lable>
+                                            <input type="text" name="name" id="name" class="form-control mt-2" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <lable class="form-label">Your Email</lable>
+                                            <input type="email" name="email" id="email" class="form-control mt-2"
+                                                required>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <lable class="form-label">Subject</lable>
+                                            <input type="text" name="subject" id="subject" class="form-control mt-2"
+                                                required>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <lable class="form-label">Message</lable>
+                                            <textarea name="message" id="message" class="form-control mt-2"
+                                                rows="5"></textarea>
+                                        </div>
+
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="send-message-btn " name="sendMessage"
+                                                id="contactbtn">
+                                                <div class="loading" id="loading"></div>
+                                                <span class="mx-3" id="load-text">Send Message</span>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </form>
+                                <div id="message-box" class="message-box text-center"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+
+        <!-- Join our newsletter section -->
+        <section id="new-letter" class="news-letter section">
+            <div class="light-background">
+                <div class="container section-title py-5">
+                    <h3>Join Our Newsletter</h3>
+                    <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+                </div>
+                <div class="container">
+                    <div class="form-center">
+                        <form action="" method="post" class="">
+                            <div class="newsletter-form"><input type="email" name="email" required> <button
+                                    type="submit">Subscribe</button></div>
+                            <div class="loading d-none">Loading</div>
+                            <div class="error-message d-none"></div>
+                            <div class="sent-message d-none">Your subscription request has been sent. Thank you!</div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Footer section -->
+        <section id="footer" class="footer">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6 footer-about">
+                        <a href="index.html" class="d-flex align-items-center">
+                            <span class="sitename">SahoTech</span>
+                        </a>
+                        <div class="footer-contact pt-3">
+                            <p>Adjoa Road</p>
+                            <p>Takoradi, WH- 2108-5059</p>
+                            <p class="mt-3"><strong>Phone:</strong> <span>+233 242780205</span></p>
+                            <p><strong>Email:</strong> <span>sahotech06@gmail.com</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="hero">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="about-us">About us</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="services">Services</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="resume">Resume</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="projects">Projects</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="projects">App Development</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="projects">UI/UX Design</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="projects">Web Design</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="projects">Web Development</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="projects">Product Management</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 footer-links">
+                        <h4>Follow Us</h4>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                        <div class="social-links d-flex">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container copyright text-center my-4">
+                    <p>© <span id="get-date">2021</span><strong class="px-1 sitename">SahoTech</strong> <span>All Rights
+                            Reserved</span></p>
+                    <div class="credits">
+                        Designed by <a href="https://sahotech.com/">SahoTech</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scroll Top -->
+
+
+        <a href="#hero" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+
+        <!-- <i class="bi bi-arrow-up-short"></i> -->
+        <!-- <a href="hero" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+                    class="bi bi-arrow-up-short"></i></a> -->
+
+
+
+        <!-- Preloader -->
+        <div id="preloader"></div>
+
+    </main>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="main.js"></script>
+    <!--BOOSTRAP JS FILE -->
+    <script src=" vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
