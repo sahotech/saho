@@ -94,12 +94,17 @@ a {
 .brand {
   color: #fff;
   text-decoration: none;
-  font-family: fantasy;
 }
-.brand span {
-  color: #fff;
+.brand h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+}
+.brand h2 span {
+  color: var(--hoverColor);
   font-size: 20px;
 }
+
 .navmenu ul {
   display: flex;
   align-items: start;
@@ -638,12 +643,16 @@ a {
   width: 100%;
 }
 
-.testimonials .container .test-slide .test-card p .quote-icon-left {
+.bi-quote {
+  color: color-mix(in srgb, var(--priColor), transparent 30%);
+}
+.testimonials .container .test-card p .quote-icon-left {
   display: inline-block;
   left: -5px;
+  color: var(--priColor);
   position: relative;
 }
-.testimonials .container .test-slide .test-card p .quote-icon-right {
+.testimonials .container .test-card p .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -960,4 +969,7 @@ a {
   100% {
     transform: rotate(360deg);
   }
+}
+.credits a {
+  color: var(--priColor);
 }
